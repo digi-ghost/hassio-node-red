@@ -14,13 +14,13 @@ RUN mkdir /node-red && \
     npm cache clear --force && \
     mkdir /node-temp && \
     cd /node-temp && \
-    npm install --no-optional --only=production node-red-contrib-home-assistant@0.2.1 && \
-    npm install --no-optional --only=production node-red-contrib-home-assistant@0.3.0 && \
-    npm install --no-optional --only=production node-red-contrib-home-assistant@0.3.2 && \
+    npm install --no-optional --only=production node-red-contrib-home-assistant-llat@0.3.7 && \
+    npm install --no-optional --only=production node-red-contrib-home-assistant-llat@0.3.9 && \
+    npm install --no-optional --only=production node-red-contrib-home-assistant-llat@0.3.10 && \
     cd / && \
     rm -Rf /node-temp
 
-ENV PALETTE_VERSIONS="0.2.1 0.3.0 0.3.2"
+ENV PALETTE_VERSIONS="0.3.7 0.3.9 0.3.10"
 
 WORKDIR /data
 
