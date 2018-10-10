@@ -107,7 +107,7 @@ fi
 pushd /share/node-red > /dev/null
 
 # get current version of palette
-current_version=$(npm --json list node-red-contrib-home-assistant | jq --raw-output '.dependencies["node-red-contrib-home-assistant"].version')
+current_version=$(npm --json list node-red-contrib-home-assistant-llt | jq --raw-output '.dependencies["node-red-contrib-home-assistant-llt"].version')
 
 # if version doesn't match currently installed version, install it
 if [ "$current_version" != "$PALETTE_VERSION" ]; then
@@ -123,11 +123,11 @@ if [ "$current_version" != "$PALETTE_VERSION" ]; then
     # install version from cache or Internet
     if [ ${version_map["$PALETTE_VERSION"]} ]; then
         echo "Installing $PALETTE_VERSION from cache"
-        npm install --no-optional --only=production --save --offline "node-red-contrib-home-assistant@$PALETTE_VERSION"
+        npm install --no-optional --only=production --save --offline "node-red-contrib-home-assistant-llt@$PALETTE_VERSION"
     else
         echo "Palette Version \"$PALETTE_VERSION\" not in valid list of versions: \""${palette_versions[@]}"\""
         echo "Installing $PALETTE_VERSION from Internet"
-        npm install --no-optional --only=production --save "node-red-contrib-home-assistant@$PALETTE_VERSION"
+        npm install --no-optional --only=production --save "node-red-contrib-home-assistant-llt@$PALETTE_VERSION"
     fi
 else
     echo "Current palette version $current_version matches requested version"
