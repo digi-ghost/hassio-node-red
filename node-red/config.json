@@ -1,10 +1,10 @@
 {
     "name": "Node-RED",
-    "version": "1.9",
+    "version": "1.10",
     "slug": "node-red",
     "description": "Node-RED automation server",
-    "url": "https://github.com/korylprince/hassio-node-red/tree/master/node-red",
-    "image": "korylprince/hassio-node-red-{arch}",
+    "url": "https://github.com/digi-ghost/hassio-node-red/tree/master/node-red",
+    "image": "digi-ghost/hassio-node-red-{arch}",
     "webui": "[PROTO:ssl]://[HOST]:[PORT:1880]",
     "startup": "application",
     "boot": "auto",

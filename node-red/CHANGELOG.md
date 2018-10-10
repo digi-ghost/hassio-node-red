@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.10] - 2018-10-10
+### Changed
+- Updated to use node-red-contrib-home-assistant-llt v 0.3.10
+
 ## [1.9] - 2018-05-05
 ### Changed
 - Updated node-red-contrib-home-assistant to 0.3.2

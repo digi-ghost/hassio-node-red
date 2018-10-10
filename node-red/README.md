@@ -1,3 +1,6 @@
+** Repo fork to use maintained version of the node-red home assistant node that uses Long Lived Tokens.
+
+
 See the fully formatted README on [GitHub](https://github.com/korylprince/hassio-node-red/tree/master/node-red).
 
 # About
